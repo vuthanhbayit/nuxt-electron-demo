@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-electron-quick-start",
+  "name": "nuxt-electron-demo",
   "version": "0.0.0",
   "private": true,
   "author": "Vũ Thanh Bảy",
@@ -12,7 +12,7 @@
   "devDependencies": {
     "electron": "^28.0.0",
     "electron-builder": "^24.9.1",
-    "nuxt": "^3.8.2",
+    "nuxt": "^3.9.0",
     "nuxt-electron": "^0.7.0",
     "vite-plugin-electron-renderer": "^0.14.5"
   }

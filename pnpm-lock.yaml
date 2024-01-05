@@ -12,7 +12,7 @@ devDependencies:
     specifier: ^24.9.1
     version: 24.9.1
   nuxt:
-    specifier: ^3.8.2
+    specifier: ^3.9.0
     version: 3.9.0(vite@5.0.11)
   nuxt-electron:
     specifier: ^0.7.0
@@ -3455,6 +3455,7 @@ packages:
 
   /function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
+    requiresBuild: true
     dev: true
 
   /gauge@3.0.2:
@@ -6668,7 +6669,7 @@ packages:
       debug: 4.3.4
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 5.0.10
+      vite: 5.0.11
     transitivePeerDependencies:
       - '@types/node'
       - less
