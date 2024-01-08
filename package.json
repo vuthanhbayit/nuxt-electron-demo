@@ -7,13 +7,20 @@
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "nuxi dev",
-    "build": "nuxi build --prerender && electron-builder"
+    "build": "nuxi build --prerender && electron-builder",
+    "lint": "eslint --ext .ts,.js,.mjs,.cjs --ignore-path .gitignore ."
   },
   "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
     "electron": "^28.0.0",
     "electron-builder": "^24.9.1",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "nuxt": "^3.9.0",
     "nuxt-electron": "^0.7.0",
+    "prettier": "^3.0.3",
     "vite-plugin-electron-renderer": "^0.14.5"
   }
 }
