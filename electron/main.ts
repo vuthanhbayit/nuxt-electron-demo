@@ -1,16 +1,6 @@
 import path from 'path'
 import { app, BrowserWindow } from 'electron'
 
-// The built directory structure
-//
-// ├─┬ dist-electron
-// │ ├─┬ main
-// │ │ └── index.js
-// │ ├─┬ preload
-// │ │ └── index.js
-// │ ├─┬ renderer
-// │ │ └── index.html
-
 process.env.ROOT = path.join(__dirname, '..')
 process.env.DIST = path.join(process.env.ROOT, 'dist-electron')
 process.env.VITE_PUBLIC = process.env.VITE_DEV_SERVER_URL
