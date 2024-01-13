@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-electron-demo",
+  "name": "dev-utils",
   "version": "0.0.0",
   "private": true,
   "author": "Vũ Thanh Bảy",
@@ -7,7 +7,8 @@
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "nuxi dev",
-    "build": "nuxi build --prerender && electron-builder",
+    "build": "nuxi build && electron-builder",
+    "preview": "nuxi preview",
     "lint": "eslint --ext .ts,.js,.mjs,.cjs --ignore-path .gitignore ."
   },
   "devDependencies": {
@@ -26,6 +27,8 @@
   },
   "dependencies": {
     "@nuxt/ui": "^2.11.1",
-    "@nuxt/ui-pro": "^0.7.0"
+    "@nuxt/ui-pro": "^0.7.0",
+    "@vt7/utils": "^5.1.0",
+    "dayjs": "^1.11.10"
   }
 }

@@ -11,6 +11,12 @@ dependencies:
   '@nuxt/ui-pro':
     specifier: ^0.7.0
     version: 0.7.0(nuxt@3.9.0)(vite@5.0.11)(vue@3.4.5)
+  '@vt7/utils':
+    specifier: ^5.1.0
+    version: 5.1.0
+  dayjs:
+    specifier: ^1.11.10
+    version: 1.11.10
 
 devDependencies:
   '@nuxtjs/eslint-config-typescript':
@@ -2326,6 +2332,10 @@ packages:
       vite: 5.0.10
       vue: 3.4.5(typescript@5.3.3)
 
+  /@vt7/utils@5.1.0:
+    resolution: {integrity: sha512-PWlydH5jehVEtPrmBGiwL8zKGX1EJvaHTbk81oPf1zVAHN+E8e+pJ2gslhQGhEEvSA3CifvwkG1lcLKIKO5RlA==}
+    dev: false
+
   /@vue-macros/common@1.10.0(vue@3.4.5):
     resolution: {integrity: sha512-4DZsPeQA/nBQDw2RkYAmH7KrFjJVrMdAhJhO1JCl1bbbFXCGeoGjXfkg9wHPppj47s2HpAB3GrqNwqVGbi12NQ==}
     engines: {node: '>=16.14.0'}
@@ -3652,6 +3662,10 @@ packages:
 
   /csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+
+  /dayjs@1.11.10:
+    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
+    dev: false
 
   /debug@2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}

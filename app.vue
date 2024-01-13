@@ -1,8 +1,8 @@
 <template>
-  <u-page class="!gap-0">
-    <template #left>
-      <u-aside :links="links" class="py-4 !px-4 !-mx-0 border-r border-gray-500 dark:border-gray-700">
-        <template #top>
+  <div class="flex">
+    <div class="hidden lg:block w-[300px]">
+      <div class="p-4 border-r border-gray-300 dark:border-gray-700 h-screen">
+        <div class="h-full flex flex-col space-y-4">
           <u-input
             :trailing="false"
             color="white"
@@ -11,16 +11,30 @@
             size="sm"
           >
             <template #trailing>
-              <u-kbd>⌘</u-kbd>
-              <u-kbd>K</u-kbd>
+              <div class="flex space-x-1">
+                <u-kbd>⌘</u-kbd>
+                <u-kbd>K</u-kbd>
+              </div>
             </template>
           </u-input>
-        </template>
-      </u-aside>
-    </template>
 
-    <NuxtPage class="p-4" />
-  </u-page>
+          <div class="flex-1 overflow-auto">
+            <u-aside-links :links="links" :ui="{ label: 'text-xs relative' }"></u-aside-links>
+          </div>
+
+          <div class="flex justify-between items-center space-x-2">
+            <u-color-mode-toggle></u-color-mode-toggle>
+
+            <span class="text-xs font-semibold">DevUtils 0.0.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-1">
+      <nuxt-page class="p-4"></nuxt-page>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -29,22 +43,6 @@ const links = [
     label: 'Unix Time Converter',
     icon: 'i-heroicons-clock',
     to: '/unix-time-converter',
-  },
-  {
-    label: 'Roadmap',
-    icon: 'i-heroicons-academic-cap',
-    to: '/roadmap',
-  },
-  {
-    label: 'Pro',
-    icon: 'i-heroicons-square-3-stack-3d',
-    to: '/pro',
-  },
-  {
-    label: 'Releases',
-    icon: 'i-heroicons-rocket-launch',
-    to: 'https://github.com/nuxt/ui/releases',
-    target: '_blank',
   },
 ]
 
