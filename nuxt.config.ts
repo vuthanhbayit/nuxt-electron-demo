@@ -1,4 +1,6 @@
 export default defineNuxtConfig({
+  ssr: false,
+
   extends: ['@nuxt/ui-pro'],
   modules: ['nuxt-electron', '@nuxt/ui'],
 
