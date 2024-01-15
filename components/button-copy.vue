@@ -12,7 +12,7 @@
 import { useClipboard } from '@vueuse/core'
 
 interface Props {
-  value: string
+  value: string | number | boolean
 }
 
 const props = defineProps<Props>()
@@ -21,6 +21,6 @@ const { copy, copied } = useClipboard()
 const onCopy = () => {
   if (!props.value) return
 
-  copy(props.value)
+  copy(props.value.toString())
 }
 </script>

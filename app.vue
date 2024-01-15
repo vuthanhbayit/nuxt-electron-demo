@@ -1,45 +1,48 @@
 <template>
-  <div id="_app" :class="{ 'is-active-sidebar': visible }" class="h-screen">
+  <div id="_app" :class="{ 'is-active-sidebar': visible }">
     <resizable-pane class="h-full">
       <template v-if="visible" #resizable>
-        <div class="mt-8 p-4 h-full w-full">
-          <div class="h-full flex flex-col space-y-4">
-            <u-input
-              :trailing="false"
-              color="white"
-              icon="i-heroicons-magnifying-glass-20-solid"
-              placeholder="Search..."
-              size="sm"
-            >
-              <template #trailing>
-                <div class="flex space-x-1">
-                  <u-kbd>⌘</u-kbd>
-                  <u-kbd>K</u-kbd>
-                </div>
-              </template>
-            </u-input>
+        <div class="h-screen bg-gray-100 dark:bg-gray-800 w-full sticky top-0 inset-0 flex flex-col">
+          <div class="h-8 w-full"></div>
+          <div class="flex-1 p-4 h-full w-full overflow-auto">
+            <div class="h-full flex flex-col space-y-4">
+              <u-input
+                :trailing="false"
+                color="white"
+                icon="i-heroicons-magnifying-glass-20-solid"
+                placeholder="Search..."
+                size="sm"
+              >
+                <template #trailing>
+                  <div class="flex space-x-1">
+                    <u-kbd>⌘</u-kbd>
+                    <u-kbd>K</u-kbd>
+                  </div>
+                </template>
+              </u-input>
 
-            <div class="flex-1 overflow-auto">
-              <u-aside-links
-                :links="links"
-                :ui="{
-                  label: 'text-xs relative',
-                  wrapper: 'space-y-3 mb-3 lg:mb-6 lg:mx-0',
-                }"
-              ></u-aside-links>
-            </div>
+              <div class="flex-1 overflow-auto">
+                <u-aside-links
+                  :links="links"
+                  :ui="{
+                    label: 'text-xs relative',
+                    wrapper: 'space-y-3 mb-3 lg:mb-6 lg:mx-0',
+                  }"
+                ></u-aside-links>
+              </div>
 
-            <div class="flex justify-between items-center space-x-2">
-              <u-color-mode-toggle></u-color-mode-toggle>
+              <div class="flex justify-between items-center space-x-2">
+                <u-color-mode-toggle></u-color-mode-toggle>
 
-              <span class="text-xs font-semibold">DevUtils 0.0.0</span>
+                <span class="text-xs font-semibold">DevUtils 0.0.0</span>
+              </div>
             </div>
           </div>
         </div>
       </template>
 
       <div class="w-full">
-        <div class="title-bar relative flex items-center h-8 px-4">
+        <div class="title-bar sticky top-0 inset-x-0 bg-white dark:bg-gray-900 z-10 flex items-center h-8 px-4">
           <div>
             <u-button
               color="gray"
