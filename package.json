@@ -29,7 +29,9 @@
   "dependencies": {
     "@nuxt/ui": "^2.11.1",
     "@nuxt/ui-pro": "^0.7.0",
+    "@vt7/composables": "^5.1.0",
     "@vt7/utils": "^5.1.0",
+    "custom-electron-titlebar": "^4.2.7",
     "dayjs": "^1.11.10",
     "serve-handler": "^6.1.5"
   }
