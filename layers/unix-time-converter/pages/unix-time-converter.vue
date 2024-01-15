@@ -143,6 +143,10 @@
     </div>
 
     <div class="w-full border-t border-gray-300 dark:border-gray-700"></div>
+
+    <div>
+      <section-timezone :instance="timeInstance"></section-timezone>
+    </div>
   </div>
 </template>
 
@@ -213,7 +217,8 @@ const handleNow = () => {
   time.value = dayjs().valueOf().toString()
 }
 
-useHead({
-  title: 'Unix Time Converter',
+definePageMeta({
+  name: 'unix-time-converter',
+  path: '/unix-time-converter',
 })
 </script>

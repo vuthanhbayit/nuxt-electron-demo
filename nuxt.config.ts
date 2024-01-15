@@ -1,7 +1,8 @@
 export default defineNuxtConfig({
   ssr: false,
 
-  extends: ['@nuxt/ui-pro'],
+  extends: ['@nuxt/ui-pro', './layers/unix-time-converter'],
+
   modules: ['nuxt-electron', '@nuxt/ui'],
 
   electron: {
